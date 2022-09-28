@@ -9,6 +9,19 @@
     font-weight: 300;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid white;  /* creates padding around scroll thumb */
+}
 
 .background {
     background-image: url("./assets/wooden-background.jpg");
@@ -16,7 +29,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    border-bottom: 5px solid #4a001a;
+    width: 100%;
+    
 
 }
 
@@ -79,7 +93,7 @@ ul {
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: white;
+    background-color: #9F1D35;
     position: absolute;
     bottom: -3px;
     left: 0px;
@@ -106,7 +120,7 @@ li {
 }
 
 .banner .containerB {
-    height: 450px;
+    height: 350px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -119,7 +133,7 @@ li {
 
     padding-left: 40px;
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 300;
 
 }
@@ -139,17 +153,35 @@ li {
 .social {
     background-color: rgb(90, 51, 51);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     border-bottom: 5px solid rgb(160, 0, 0);
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding-left: 20%;
 
 }
 
+.containers {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.objeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    padding-left: 300px;
+}
 .social img {
-    width: 30%;
+   height: 30%;
+   width: 30%;
 }
 
 .social img {
@@ -163,10 +195,11 @@ li {
 
 .social p {
     color: white;
-    width: 50%;
+    width: 70%;
     display: flex;
     text-align: center;
     font-size: 150%;
+    
 }
 
 .social h2 {
@@ -174,10 +207,15 @@ li {
     font-weight: 700;
 }
 
-
+.texto{
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    
+}
 .footer {
     background-image: url("./assets/Imagem\ 4.jpg");
-    ;
+    width: 100%;
     padding: 15px 15px;
     height: 300px;
     display: flex;
