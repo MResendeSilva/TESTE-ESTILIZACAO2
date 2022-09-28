@@ -9,18 +9,24 @@
     font-weight: 300;
     box-sizing: border-box;
 }
+
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+    width: 8px;
+    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: white;        /* color of the tracking area */
+    background: white;
+    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: gray;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid white;  /* creates padding around scroll thumb */
+    background-color: gray;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 2px solid white;
+    /* creates padding around scroll thumb */
 }
 
 .background {
@@ -30,7 +36,7 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    
+
 
 }
 
@@ -151,10 +157,11 @@ li {
 
 
 .social {
-    background-color: rgb(90, 51, 51);
+    background: rgb(51,28,22);
+    background: linear-gradient(180deg, rgba(51,28,22,1) 0%, rgba(87,62,53,1) 100%);
     height: 100vh;
     width: 100%;
-    border-bottom: 5px solid rgb(160, 0, 0);
+
     display: flex;
     align-items: center;
 
@@ -165,7 +172,7 @@ li {
     width: 80%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .objeto {
@@ -174,50 +181,23 @@ li {
     justify-content: space-between;
 }
 
-h1{
-    display:flex;
+h1 {
+    display: flex;
     justify-content: center;
     padding-left: 300px;
 }
-.social img {
-   height: 30%;
-   width: 30%;
-}
 
-.social img {
-    transition: all 0.8s;
-}
 
-.social img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.2);
-}
 
-.social p {
-    color: white;
-    width: 70%;
-    display: flex;
-    text-align: center;
-    font-size: 150%;
-    
-}
 
-.social h2 {
-    color: black;
-    font-weight: 700;
-}
 
-.texto{
-    display: flex;
-    justify-content: flex-end;
-    width: 98%;
-    
-}
+
+
 .footer {
     background-image: url("./assets/Imagem\ 4.jpg");
     width: 100%;
-    padding: 15px 15px;
-    height: 300px;
+    padding: 10px 10px;
+    height: 110px;
     display: flex;
     align-items: center;
 
@@ -225,11 +205,17 @@ h1{
 
 .containerd {
     margin: 0 auto;
+    padding: 5px 5px;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+
+}
+
+.containerd img {
+    width: 150px;
 }
 
 .downbar ul {
@@ -239,6 +225,3 @@ h1{
     flex-direction: row;
 }
 
-.footer .logo img {
-    width: 250px;
-}
